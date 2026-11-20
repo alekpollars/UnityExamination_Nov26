@@ -1535,7 +1535,7 @@ GameObject:
   - component: {fileID: 389708095}
   - component: {fileID: 389708094}
   m_Layer: 0
-  m_Name: HalYta
+  m_Name: Hal Yta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1656,10 +1656,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.5088363, w: 0.8608633}
   m_LocalPosition: {x: 8.21, y: -1.22, z: 0}
-  m_LocalScale: {x: 4.694934, y: 0.26862037, z: 1}
+  m_LocalScale: {x: 4.6949344, y: 0.2686204, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1616152401}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -61.173}
 --- !u!1 &409335070
 GameObject:
@@ -2916,8 +2916,9 @@ GameObject:
   - component: {fileID: 1391458793}
   - component: {fileID: 1391458792}
   - component: {fileID: 1391458791}
+  - component: {fileID: 1391458794}
   m_Layer: 0
-  m_Name: "Kraft \xE5t h\xF6ger"
+  m_Name: Flytande Yta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3016,7 +3017,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
@@ -3037,12 +3038,32 @@ Transform:
   m_GameObject: {fileID: 1391458789}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.19, y: -0.49, z: 0}
-  m_LocalScale: {x: 2.0267472, y: 1, z: 1}
+  m_LocalPosition: {x: -1.5289, y: -1.69, z: 0}
+  m_LocalScale: {x: 3.0289738, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1616152401}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!253 &1391458794
+BuoyancyEffector2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391458789}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_SurfaceLevel: 0
+  m_Density: 9
+  m_LinearDamping: 5
+  m_AngularDamping: 5
+  m_FlowAngle: 25
+  m_FlowMagnitude: 400
+  m_FlowVariation: 0
 --- !u!1 &1437688688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3104,9 +3125,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1727338821}
   - {fileID: 1146788558}
+  - {fileID: 1727338821}
   - {fileID: 1391458793}
+  - {fileID: 389708096}
   - {fileID: 1764015006}
   - {fileID: 1376373205}
   - {fileID: 1238810561}
@@ -3656,7 +3678,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: bfe576fb215cf7c43b06c72c02a3b974, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.679
+  m_Volume: 0.551
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4713,4 +4735,3 @@ SceneRoots:
   - {fileID: 2081550513}
   - {fileID: 1883473575}
   - {fileID: 409335071}
-  - {fileID: 389708096}
